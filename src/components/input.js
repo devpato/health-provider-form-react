@@ -1,10 +1,14 @@
 import React from 'react';
 
-export const renderInput = (props) => (
-	<div className="">
-		<label>{props.label}</label>
-		<div>
-			<input {...props.input} placeholder={props.placeholder} type={props.type} autoComplete="off" />
+export const renderInput = (props) => {
+	const { label, input, type, placeholder, meta } = props;
+	return (
+		<div className="">
+			<label>{label}</label>
+			<div>
+				<input {...input} placeholder={placeholder} type={type} autoComplete="off" />
+				{meta.error && meta.touched && <div style={{ color: 'red' }}>{meta.error}</div>}
+			</div>
 		</div>
-	</div>
-);
+	);
+};

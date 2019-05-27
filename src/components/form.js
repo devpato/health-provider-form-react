@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { renderInput } from '../components/input';
+import { validate } from '../validation/index';
 
 class Form extends Component {
 	render() {
@@ -19,7 +20,8 @@ class Form extends Component {
 }
 
 Form = reduxForm({
-	form: 'form'
+	form: 'form',
+	validate
 })(Form);
 
 export default Form;
