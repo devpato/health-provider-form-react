@@ -4,7 +4,7 @@ export const renderInput = (props) => {
 	return (
 		<div className={className(meta)}>
 			<label>{label}</label>
-			<input {...input} placeholder={placeholder} type={type} autoComplete="off" class />
+			<input {...input} placeholder={placeholder} type={type} autoComplete="off" />
 			{renderError(meta)}
 		</div>
 	);

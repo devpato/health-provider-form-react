@@ -1,11 +1,11 @@
-.customer-select-container {
-	position: relative;
-	margin: 00 24px 0;
+.ui.form {
+	width: 800px;
 }
 
-button {
+.ui.button.primary {
 	width: 100%;
-	background-color: orange;
 	color: white;
 	border: 0;
+	background-color: #ff671f;
+	border-radius: 0;
 }
