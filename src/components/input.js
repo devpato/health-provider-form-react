@@ -1,14 +1,25 @@
 import React from 'react';
-
 export const renderInput = (props) => {
 	const { label, input, type, placeholder, meta } = props;
 	return (
-		<div className="">
+		<div className={className(meta)}>
 			<label>{label}</label>
-			<div>
-				<input {...input} placeholder={placeholder} type={type} autoComplete="off" />
-				{meta.error && meta.touched && <div style={{ color: 'red' }}>{meta.error}</div>}
-			</div>
+			<input {...input} placeholder={placeholder} type={type} autoComplete="off" class />
+			{renderError(meta)}
 		</div>
 	);
+};
+
+export const renderError = ({ error, touched }) => {
+	if (touched && error) {
+		return (
+			<div className="ui error message">
+				<div className="header"> {error}</div>
+			</div>
+		);
+	}
+};
+
+export const className = (meta) => {
+	return `field ${meta.error && meta.touched ? 'error' : ''} `;
 };

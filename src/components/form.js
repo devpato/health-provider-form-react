@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { renderInput } from '../components/input';
-import { required, minLength } from '../validation/index';
+import { required, minLength2, alphaNumeric,number } from '../validation/index';
+
+import '../components/form.css';
 
 class Form extends Component {
 	render() {
@@ -15,9 +17,9 @@ class Form extends Component {
 					type="text"
 					placeholder="Full Name"
 					label="Full Name"
-					validate={[ required, minLength ]}
+					validate={[ required, alphaNumeric, minLength2 ]}
 				/>
-				<Field name="npi" component={renderInput} type="text" placeholder="NPI" label="NPI" />
+				<Field name="npi" component={renderInput} type="text" placeholder="NPI" label="NPI" validate={[ required,  number ]}/>
 				<button type="submit" label="submit" className="ui button primary">
 					Create
 				</button>
