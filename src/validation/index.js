@@ -1,11 +1,7 @@
-export const validate = (inputs) => {
-	const errors = {};
-	if (!inputs.fullName) {
-		errors.fullName = 'Enter your Full Name';
-	}
+export const required = (value) => {
+	return value ? undefined : 'Value is required';
+};
 
-	if (!inputs.npi) {
-		errors.npi = 'Enter your NPI';
-	}
-	return errors;
+export const minLength = (value) => {
+	return value.length < 4 ? 'Value must be at least 4 characters' : undefined;
 };

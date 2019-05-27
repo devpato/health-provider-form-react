@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { renderInput } from '../components/input';
-import { validate } from '../validation/index';
+import { required, minLength } from '../validation/index';
 
 class Form extends Component {
 	render() {
@@ -9,7 +9,14 @@ class Form extends Component {
 		console.log(handleSubmit);
 		return (
 			<form onSubmit={handleSubmit} className="ui form error">
-				<Field name="fullName" component={renderInput} type="text" placeholder="Full Name" label="Full Name" />
+				<Field
+					name="fullName"
+					component={renderInput}
+					type="text"
+					placeholder="Full Name"
+					label="Full Name"
+					validate={[ required, minLength ]}
+				/>
 				<Field name="npi" component={renderInput} type="text" placeholder="NPI" label="NPI" />
 				<button type="submit" label="submit" className="ui button primary">
 					Create
@@ -20,8 +27,7 @@ class Form extends Component {
 }
 
 Form = reduxForm({
-	form: 'form',
-	validate
+	form: 'form'
 })(Form);
 
 export default Form;
