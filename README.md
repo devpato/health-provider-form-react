@@ -19,7 +19,7 @@ Small app created with ReactJS ane AWS. The client side has a form where the use
 
 ### View the GET method
 
-[Click on the link to view the data in the DynamoDB table](https://p2pqluc1s5.execute-api.us-east-1.amazonaws.com/providers-api/providers)
+[Click here to view the data in the DynamoDB table](https://p2pqluc1s5.execute-api.us-east-1.amazonaws.com/providers-api/providers)
 
 ### `npm start`
 
