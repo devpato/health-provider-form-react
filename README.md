@@ -2,9 +2,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Provider Registration From - ReactJS
 
-Small app created with ReactJS ane AWS. The client side has a form where the user can enter their provider's information, then the data will be sent to AWS to be stored in DynamoDB. Once the new provider has input
+Small app created with ReactJS ane AWS. The client side has a form where the user can enter their provider's information, then the data will be sent to AWS to be stored in DynamoDB.
 
-### `Tech Stack`
+## Deployed App
+
+[View deployed app](https://provider-form.firebaseapp.com/)
+
+### Tech Stack
 
 -ReactJS<br>
 -AWS API Getway<br>
@@ -17,7 +21,7 @@ Small app created with ReactJS ane AWS. The client side has a form where the use
 
 <img src="./providers-react.jpeg">
 
-### View the GET method
+### View the Data uploaded into DynamoDB
 
 [Click here to view the data in the DynamoDB table](https://p2pqluc1s5.execute-api.us-east-1.amazonaws.com/providers-api/providers)
 
