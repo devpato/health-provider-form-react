@@ -8,6 +8,10 @@ Small app created with ReactJS ane AWS. The client side has a form where the use
 
 [View deployed app](https://provider-form.firebaseapp.com/)
 
+### Workflow
+
+<img src="./providers-react.jpeg">
+
 ### Tech Stack
 
 -ReactJS<br>
@@ -16,10 +20,6 @@ Small app created with ReactJS ane AWS. The client side has a form where the use
 -AWS IAM (security and roles)<br>
 -AWS S3<br>
 -AWS DynamoDB<br>
-
-### Workflow
-
-<img src="./providers-react.jpeg">
 
 ### View the Data uploaded into DynamoDB
 
