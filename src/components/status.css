@@ -1,0 +1,17 @@
+.status-passed .message {
+  margin: 4px;
+  color: #006400;
+}
+
+.status-passed i {
+  color: #006400;
+}
+
+.status-error .message {
+  margin: 4px;
+  color: #8b0000;
+}
+
+.status-error i {
+  color: #8b0000;
+}
